@@ -181,3 +181,52 @@ DECIMAL:
 DECIMAL veri tipi tam sayısal değerleri saklamak için kullanılır. Genellikle parasal veya hassasiyetin gerekli olduğu diğer değerler için kullanılır.
 DECIMAL veri türü iki parametre gerektirir: DECIMAL(p,s), burada p saklanabilecek toplam basamak sayısını (hassasiyet) ve a ondalık noktadan sonraki basamak sayısını (ölçek) belirtir.
 ```
+
+```jsx
+DATE:
+Stores a date value in the format 'YYYY-MM-DD'
+For example, '2024-03-02' represent March 2, 2024.
+```
+
+```jsx
+TIME:
+Stores a time value in the format 'HH-MM-SS'
+For example, '14:30:00' represent March 2.30.00.
+```
+
+```jsx
+DATETIME:
+DATATIME datatypes is used to Store both date and a time information in the format.
+For example, 'YYYY-MM-DD HH:MM:SS' 
+```
+
+```jsx
+Insert Data Label(s)
+INSERT INTO games(name, ratings);
+```
+
+```jsx
+Provide Values For Label(s)
+VALUES ('GTA 6', 6)
+```
+
+```jsx
+Multible Values Insert
+VALUES ('GTA 6', 6)
+       ('Batman Knight', 8)
+        ('AKR 2', 1)
+```
+
+```jsx
+Select specific property from a table
+SELECT PROPERTY FROM TABLE;
+
+SELECT ratings FROM games;
+```
+
+```jsx
+Select multiple properties from a table
+SELECT PROPERTY1, PROPERTY2 FROM TABLE;
+
+SELECT name, ratings FROM games;
+```
