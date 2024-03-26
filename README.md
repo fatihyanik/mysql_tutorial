@@ -13,12 +13,12 @@ Genellikle veritabanı yönetim sistemi veya (DBMS) adı verilen özel bir yazı
 
 ```jsx
 DBMS:
-DBMS stands for Database Management System. It is software that allows users to interact wit a database. 
+DBMS stands for Database Management System. It is software that allows users to interact wit a database.
 DBMSs are designed to manage large volumes of data efficiently and provide mechanisms for storing, retireving, updating, and managing that data.
 ```
 
 ```jsx
-DBMS, Veritabanı Yönetim Sistemi anlamına gelir. Kullanıcıların bir veritabanı ile etkileşime girmesini sağlayan yazılımdır. 
+DBMS, Veritabanı Yönetim Sistemi anlamına gelir. Kullanıcıların bir veritabanı ile etkileşime girmesini sağlayan yazılımdır.
 DBMSler büyük hacimli verileri verimli bir şekilde yönetmek için tasarlanmıştır ve bu verileri depolamak, geri almak, güncellemek ve yönetmek için mekanizmalar sağlar.
 ```
 
@@ -36,14 +36,14 @@ Veri eklemek, güncellemek, silmek ve almak için çeşitli veritabanı sistemle
 
 ```jsx
 MYSQL:
-An open source RDBMS (relational database management system) that uses SQL.  
+An open source RDBMS (relational database management system) that uses SQL.
 Think of it is as a database with SQL as its access language.
 Other examples include Microsoft SQL server and Oracle Databases.
 ```
 
 ```jsx
 MYSQL:
-SQL kullanan açık kaynaklı bir RDBMS (ilişkisel veritabanı yönetim sistemi).  
+SQL kullanan açık kaynaklı bir RDBMS (ilişkisel veritabanı yönetim sistemi).
 Erişim dili SQL olan bir veritabanı olarak düşünün.
 Diğer örnekler arasında Microsoft SQL server ve Oracle Veritabanları bulunmaktadır.
 ```
@@ -78,7 +78,6 @@ SELECT DATABASE();
 
 ```
 
-
 ```jsx
 TABLE:
 Table is a collection of data organized in a rows and columns.
@@ -93,16 +92,15 @@ Tablolar, verileri yapılandırılmış bir biçimde depolamak ve düzenlemek i�
 
 ```jsx
 DATA TYPES:
-Datatype tells the database what kind of information can be store in a particular column. 
+Datatype tells the database what kind of information can be store in a particular column.
 For example, a column with data type of "integer" can only store the whole numbers, while a column with the datatype of "text" can store letters, numbers, and other characters.
 ```
 
 ```jsx
 VERİ TÜRLERİ:
-Veri türü, veritabanına belirli bir sütunda ne tür bilgilerin saklanabileceğini söyler. 
+Veri türü, veritabanına belirli bir sütunda ne tür bilgilerin saklanabileceğini söyler.
 Örneğin, veri türü "integer" olan bir sütun yalnızca tam sayıları depolayabilirken, veri türü "text" olan bir sütun harfleri, sayıları ve diğer karakterleri depolayabilir.
 ```
-
 
 ```jsx
 CREATE TABLE GAMES(
@@ -197,7 +195,7 @@ For example, '14:30:00' represent March 2.30.00.
 ```jsx
 DATETIME:
 DATATIME datatypes is used to Store both date and a time information in the format.
-For example, 'YYYY-MM-DD HH:MM:SS' 
+For example, 'YYYY-MM-DD HH:MM:SS'
 ```
 
 ```jsx
@@ -229,4 +227,79 @@ Select multiple properties from a table
 SELECT PROPERTY1, PROPERTY2 FROM TABLE;
 
 SELECT name, ratings FROM games;
+```
+
+```jsx
+PRIMARY KEYS:
+A primary key is a unique identifier for each record in a table.
+It ensures that each row in a table is uniquely identifiable and helps maintain the integrity of the data.
+A primary key column cannot have NULL values, and each value in the column must be unique.
+```
+
+```jsx
+BİRİNCİL ANAHTARLAR:
+Birincil anahtar, bir tablodaki her kayıt için benzersiz bir tanımlayıcıdır.
+Bir tablodaki her satırın benzersiz bir şekilde tanımlanabilmesini sağlar ve verilerin bütünlüğünün korunmasına yardımcı olur.
+Bir birincil anahtar sütunu NULL değerlere sahip olamaz ve sütundaki her değer benzersiz olmalıdır.
+```
+
+```jsx
+WHERE:
+WHERE keyword is used to filter records that meet a specified condition. It is typically used in SELECT, UPDATE, and DELETE statements to narrow down the results or specify which rows to update or delete.
+```
+
+```jsx
+WHERE:
+WHERE anahtar sözcüğü, belirli bir koşulu karşılayan kayıtları filtrelemek için kullanılır. Genellikle SELECT, UPDATE ve DELETE deyimlerinde sonuçları daraltmak veya hangi satırların güncelleneceğini veya silineceğini belirtmek için kullanılır.
+```
+
+```jsx
+Select all games where ratings is 5
+SELECT * FROM games WHERE ratings=5;
+```
+
+```jsx
+Give me the names of those games who's ratings is 5
+SELECT name FROM games WHERE ratings=5;
+```
+
+```jsx
+Provide Alias For Specific Item
+SELECT id AS game_id FROM DATING_APP;
+```
+
+```jsx
+Update Data
+UPDATE table_name
+SET column1=value1, column2=value2...
+WHERE condition;
+```
+
+```jsx
+table_name : The name of the table you want to update.
+columns : The columns you want to update.
+values : The new values you want to set for the columns.
+condition: The condition that specifies which rows to update. If omitted, al rows will be updated. 
+```
+
+```jsx
+UPDATE users
+SET age = 30
+WHERE id = 1;
+```
+
+```jsx
+Delete Column From the Table
+DELETE FROM table_name
+WHERE condition;
+```
+
+```jsx
+DELETE FROM users
+WHERE id=1;
+```
+
+```jsx
+Delete Everthing / Clear The Table
+DELETE FROM users;
 ```
