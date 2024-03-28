@@ -303,3 +303,15 @@ WHERE id=1;
 Delete Everthing / Clear The Table
 DELETE FROM users;
 ```
+
+```jsx
+SUBSTRING() Function
+SUBSTRING() function is used to extract a substring from a string.
+It allows you to specify the starting position and the length of the substring to extract.
+
+SUBSTRING(string, start_position, length)
+```
+
+```jsx
+SELECT SUBSTRING('Murat', 1, 3)
+```
